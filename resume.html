@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Yug Shah</title>
+    <style>
+        /* Close Button Styles */
+        .close-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            font-size: 20px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .close-btn:hover {
+            background-color: #c0392b;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Redirect to PDF -->
-    <script type="text/javascript">
-        window.location.href = 'Resume.pdf';
-    </script>
+    <!-- Close Button to Redirect to Home Page -->
+    <button class="close-btn" onclick="window.location.href='index.html';">X Close</button>
+
+    <!-- Display the Resume PDF -->
+    <div style="text-align: center; padding: 50px;">
+        <iframe src="Resume.pdf" style="width: 100%; height: 100vh;" frameborder="0"></iframe>
+    </div>
 
 </body>
 </html>
