@@ -3,47 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume </title>
+    <title>Resume - Yug Shah</title>
     <style>
-        /* Resume Page Styles */
+        /* Page-wide Styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        nav {
-            background-color: #1a1a1a;
-            padding: 15px;
-            display: flex;
-            justify-content: space-around;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            color: #1abc9c;
-        }
-
-        /* Resume Title with Background Image */
-        .resume-header {
+        /* Hero Section (Resume Title with Full Background Image) */
+        .resume-hero {
             background: url('Resume_Image.jpg') no-repeat center center/cover;
-            height: 300px;
+            height: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -51,9 +23,9 @@
             text-align: center;
         }
 
-        .resume-header h1 {
-            font-size: 3em;
-            background-color: rgba(0, 0, 0, 0.5);
+        .resume-hero h1 {
+            font-size: 4em;
+            background-color: rgba(0, 0, 0, 0.6);
             padding: 20px;
             border-radius: 10px;
         }
@@ -61,17 +33,19 @@
         /* Resume PDF Embed */
         .resume-content {
             text-align: center;
-            padding: 40px;
+            padding: 50px;
         }
 
         .resume-content iframe {
             width: 80%;
             height: 800px;
+            border: none;
         }
 
+        /* Download Button */
         .download-btn {
             text-align: center;
-            margin-bottom: 40px;
+            margin: 40px 0;
         }
 
         .download-btn a {
@@ -87,45 +61,38 @@
             background-color: #2980b9;
         }
 
+        /* Footer */
         footer {
             background-color: #2c3e50;
             color: white;
             text-align: center;
             padding: 20px;
         }
+
+        footer p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Resume Header with Background Image -->
-    <!-- Resume Header with Background Image -->
-<div class="resume-header" style="background: url('Resume_Image.jpg') no-repeat center center/cover; height: 300px; display: flex; justify-content: center; align-items: center; color: white; text-align: center;">
-    <h1 style="font-size: 3em; background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">Resume</h1>
-</div>
-
+    <!-- Hero Section with Background Image -->
+    <div class="resume-hero">
+        <h1>Resume</h1>
+    </div>
 
     <!-- Embed the Resume PDF -->
     <div class="resume-content">
-        <iframe src="Resume.pdf" frameborder="0"></iframe>
+        <iframe src="Resume.pdf"></iframe>
     </div>
 
-    <!-- Download Button -->
+    <!-- Download Resume Button -->
     <div class="download-btn">
-        <a href="Resume.pdf" target="_blank">Download PDF</a>
+        <a href="Resume.pdf" target="_blank">Download Resume</a>
     </div>
 
-    <!-- Footer -->
+    
+
     <!-- LinkedIn and Email Section -->
 <section style="text-align: center; margin-bottom: 20px;">
     <a href="https://www.linkedin.com/in/yug-shah" target="_blank" style="font-size: 18px; text-decoration: none; color: #3498db;">LinkedIn</a> | 
