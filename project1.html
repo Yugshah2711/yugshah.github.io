@@ -12,8 +12,8 @@
         }
 
         .hero {
-            background: url('project-hero.jpg') no-repeat center center/cover;
-            height: 300px;
+            background: url('project-title-bg.jpg') no-repeat center center/cover;
+            height: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -53,16 +53,25 @@
             width: 100%;
             max-width: 600px;
             height: auto;
+            margin-bottom: 10px;
         }
 
         .figures-row {
             display: flex;
             justify-content: space-between;
+            margin-top: 20px;
         }
 
-        .figures-row img {
-            width: 32%;
+        .figures-row .figure {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .figures-row .figure img {
+            max-width: 100%;
             height: auto;
+            margin-bottom: 10px;
         }
 
         .download-btn {
@@ -84,12 +93,11 @@
 </head>
 <body>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Background Image -->
    <!-- Hero Section with Background Image -->
 <div class="hero" style="background: url('WEDM.jpg') no-repeat center center/cover; height: 300px; display: flex; justify-content: center; align-items: center; color: white; text-align: center;">
     <h1>Optimization of Near-Dry Wire EDM for Nitinol SMA</h1>
 </div>
-
 
     <!-- Project Content -->
     <div class="project-content">
@@ -98,45 +106,45 @@
         
         <h2 class="section-title">Project Overview</h2>
         <p class="project-description">
-            This study focuses on optimizing machining for Nitinol SMA using near-dry WEDM. I conducted the experiments and contributed to writing the paper. The Taguchi-based GRA method was employed to analyze performance metrics, such as material removal rate, surface roughness, and recast layer thickness. The optimized conditions showed significant improvements in machining performance, making it valuable for precision industries.
+            This study focuses on optimizing near-dry wire EDM for Nitinol SMA. My work involved conducting experimental trials, data analysis, and co-authoring the paper. The study analyzed material removal rate (MRR), surface roughness, and recast layer thickness using a Taguchi-based GRA approach. The goal was to enhance machining accuracy, reduce surface damage, and improve productivity.
         </p>
 
         <h2 class="section-title">Key Contributions</h2>
         <p class="project-description">
-            - Conducted experimental trials with various WEDM parameters.<br>
-            - Applied the Taguchi-based GRA optimization technique.<br>
-            - Improved MRR by 20%, reduced surface roughness by 15%, and minimized recast layer thickness.<br>
-            - Developed findings critical for high-precision applications, especially in medical device manufacturing.
+            - Conducted multiple experimental trials with different parameters to optimize machining outcomes.<br>
+            - Applied Taguchi-based GRA for multi-objective optimization to maximize MRR while minimizing surface roughness and recast layer thickness.<br>
+            - Achieved a 20% increase in MRR, 15% reduction in surface roughness, and significant reduction in recast layer thickness, resulting in superior machining quality.<br>
+            - Developed machining protocols that are particularly beneficial in biomedical applications requiring high precision and minimal surface damage.
         </p>
 
         <!-- Figure 1 -->
         <div class="figure">
             <h3>Figure 1: Experimental Setup</h3>
-            <img src="figure1.png" alt="Experimental Setup for Near-Dry Wire EDM">
-            <p>Description: The setup used for near-dry wire EDM, showcasing the key components of the experiment.</p>
+            <img src="figure1.jpg" alt="Experimental Setup for Near-Dry Wire EDM">
+            <p>Description: The experimental setup used for optimizing the near-dry WEDM process, focusing on critical factors like nozzle positioning and gas flow rate.</p>
         </div>
 
         <!-- Figures 3, 4, 5 in a Row -->
         <div class="figures-row">
             <div class="figure">
-                <img src="figure3.webp" alt="Figure 3: Surface Roughness Analysis">
-                <p>Figure 3: Surface Roughness Analysis</p>
+                <img src="figure3.jpg" alt="Figure 3: Surface Roughness Analysis">
+                <p>Figure 2: Surface roughness analysis demonstrating a 15% reduction in surface irregularities.</p>
             </div>
             <div class="figure">
-                <img src="figure4.webp" alt="Figure 4: MRR Analysis">
-                <p>Figure 4: Material Removal Rate (MRR) Analysis</p>
+                <img src="figure4.jpg" alt="Figure 4: MRR Analysis">
+                <p>Figure 3: Material removal rate (MRR) improvements, showing a 20% increase in machining efficiency.</p>
             </div>
             <div class="figure">
-                <img src="figure5.webp" alt="Figure 5: Recast Layer Analysis">
-                <p>Figure 5: Recast Layer Thickness Analysis</p>
+                <img src="figure5.jpg" alt="Figure 5: Recast Layer Thickness">
+                <p>Figure 4: Recast layer thickness analysis showing minimized surface damage and improved material integrity.</p>
             </div>
         </div>
 
         <!-- Figure 6 -->
         <div class="figure">
-            <h3>Figure 6: Optimization Results</h3>
-            <img src="figure6.png" alt="Optimization Results for Near-Dry WEDM">
-            <p>Description: The final optimization results showing improved machining performance across all key metrics.</p>
+            <h3>Figure 5: Optimization Results</h3>
+            <img src="figure6.jpg" alt="Optimization Results for Near-Dry WEDM">
+            <p>Description: The final optimization results demonstrating the best-performing parameter combination for machining Nitinol SMA using near-dry WEDM.</p>
         </div>
 
         <!-- Download Button -->
@@ -145,4 +153,3 @@
 
 </body>
 </html>
-figur
