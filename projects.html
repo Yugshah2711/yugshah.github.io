@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Yug Shah</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section for Projects Title */
+        .projects-hero {
+            background: url('CNC-Machining.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .projects-hero h1 {
+            font-size: 4em;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Introduction Text */
+        .intro-text {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        /* Project Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .project-item {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .project-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-item:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-overlay h2 {
+            color: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section with Background Image -->
+    <div class="projects-hero">
+        <h1>Projects</h1>
+    </div>
+
+    <!-- Introduction Text -->
+    <div class="intro-text">
+        Click each picture to learn more!
+    </div>
+
+    <!-- Project Grid -->
+   <div class="project-item">
+    <a href="project1.html">
+        <img src="project1.jpg" alt="Project 1">
+        <div class="project-overlay">
+            <h2>Project 1</h2>
+        </div>
+    </a>
+</div>
+
+        <!-- Add more project items as needed -->
+    </div>
+
+</body>
+</html>
