@@ -3,17 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <script>
-        function showHelloWorld() {
-            document.getElementById("message").innerHTML = "Hello World!";
+    <title>Project 1 - Optimization of Near-Dry Wire EDM</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
         }
-    </script>
+
+        .hero {
+            background: url('project-hero.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .project-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .figure img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .figures-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .figures-row img {
+            width: 32%;
+            height: auto;
+        }
+
+        .download-btn {
+            display: block;
+            width: 200px;
+            margin: 40px auto;
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .download-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
 
-    <a href="#" onclick="showHelloWorld()">Click Here</a>
-    <p id="message"></p>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Optimization of Near-Dry Wire EDM for Nitinol SMA</h1>
+    </div>
+
+    <!-- Project Content -->
+    <div class="project-content">
+        <p><strong>Published in:</strong> Journal of Manufacturing and Materials Processing</p>
+        <p><strong>DOI:</strong> <a href="https://doi.org/10.3390/jmmp060131" target="_blank">10.3390/jmmp060131</a></p>
+        
+        <h2 class="section-title">Project Overview</h2>
+        <p class="project-description">
+            This study focuses on optimizing machining for Nitinol SMA using near-dry WEDM. I conducted the experiments and contributed to writing the paper. The Taguchi-based GRA method was employed to analyze performance metrics, such as material removal rate, surface roughness, and recast layer thickness. The optimized conditions showed significant improvements in machining performance, making it valuable for precision industries.
+        </p>
+
+        <h2 class="section-title">Key Contributions</h2>
+        <p class="project-description">
+            - Conducted experimental trials with various WEDM parameters.<br>
+            - Applied the Taguchi-based GRA optimization technique.<br>
+            - Improved MRR by 20%, reduced surface roughness by 15%, and minimized recast layer thickness.<br>
+            - Developed findings critical for high-precision applications, especially in medical device manufacturing.
+        </p>
+
+        <!-- Figure 1 -->
+        <div class="figure">
+            <h3>Figure 1: Experimental Setup</h3>
+            <img src="figure1.jpg" alt="Experimental Setup for Near-Dry Wire EDM">
+            <p>Description: The setup used for near-dry wire EDM, showcasing the key components of the experiment.</p>
+        </div>
+
+        <!-- Figures 3, 4, 5 in a Row -->
+        <div class="figures-row">
+            <div class="figure">
+                <img src="figure3.jpg" alt="Figure 3: Surface Roughness Analysis">
+                <p>Figure 3: Surface Roughness Analysis</p>
+            </div>
+            <div class="figure">
+                <img src="figure4.jpg" alt="Figure 4: MRR Analysis">
+                <p>Figure 4: Material Removal Rate (MRR) Analysis</p>
+            </div>
+            <div class="figure">
+                <img src="figure5.jpg" alt="Figure 5: Recast Layer Analysis">
+                <p>Figure 5: Recast Layer Thickness Analysis</p>
+            </div>
+        </div>
+
+        <!-- Figure 6 -->
+        <div class="figure">
+            <h3>Figure 6: Optimization Results</h3>
+            <img src="figure6.jpg" alt="Optimization Results for Near-Dry WEDM">
+            <p>Description: The final optimization results showing improved machining performance across all key metrics.</p>
+        </div>
+
+        <!-- Download Button -->
+        <a href="jmmp-06-00131-v2.pdf" target="_blank" class="download-btn">Download Full PDF</a>
+    </div>
 
 </body>
 </html>
+figur
