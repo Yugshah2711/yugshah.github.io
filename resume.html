@@ -15,7 +15,7 @@
         /* Hero Section (Resume Title with Full Background Image) */
         .resume-hero {
             background: url('Resume_Image.jpg') no-repeat center center/cover;
-            height: 400px;
+            height: 600px; /* Increased height */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -30,16 +30,14 @@
             border-radius: 10px;
         }
 
-        /* Resume PDF Embed */
+        /* Resume PDF as a Downloadable Link */
         .resume-content {
             text-align: center;
             padding: 50px;
         }
 
-        .resume-content iframe {
-            width: 80%;
-            height: 800px;
-            border: none;
+        .resume-content object {
+            display: none; /* Hides the embedded PDF to remove scrolling */
         }
 
         /* Download Button */
@@ -81,17 +79,12 @@
         <h1>Resume</h1>
     </div>
 
-    <!-- Embed the Resume PDF -->
-    <div class="resume-content">
-        <iframe src="Resume.pdf"></iframe>
-    </div>
-
     <!-- Download Resume Button -->
-    <div class="download-btn">
-        <a href="Resume.pdf" target="_blank">Download Resume</a>
+    <div class="resume-content">
+        <div class="download-btn">
+            <a href="Resume.pdf" target="_blank">Download Resume</a>
+        </div>
     </div>
-
-    
 
     <!-- LinkedIn and Email Section -->
 <section style="text-align: center; margin-bottom: 20px;">
