@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume </title>
+    <style>
+        /* Resume Page Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        /* Resume Title with Background Image */
+        .resume-header {
+            background: url('Resume_Image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .resume-header h1 {
+            font-size: 3em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Resume PDF Embed */
+        .resume-content {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .resume-content iframe {
+            width: 80%;
+            height: 800px;
+        }
+
+        .download-btn {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .download-btn a {
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        .download-btn a:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Resume Header with Background Image -->
+    <!-- Resume Header with Background Image -->
+<div class="resume-header" style="background: url('Resume_Image.jpg') no-repeat center center/cover; height: 300px; display: flex; justify-content: center; align-items: center; color: white; text-align: center;">
+    <h1 style="font-size: 3em; background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">Resume</h1>
+</div>
+
+
+    <!-- Embed the Resume PDF -->
+    <div class="resume-content">
+        <iframe src="Resume.pdf" frameborder="0"></iframe>
+    </div>
+
+    <!-- Download Button -->
+    <div class="download-btn">
+        <a href="Resume.pdf" target="_blank">Download PDF</a>
+    </div>
+
+    <!-- Footer -->
+    <!-- LinkedIn and Email Section -->
+<section style="text-align: center; margin-bottom: 20px;">
+    <a href="https://www.linkedin.com/in/yug-shah" target="_blank" style="font-size: 18px; text-decoration: none; color: #3498db;">LinkedIn</a> | 
+    <a href="mailto:yug2711@stanford.edu" style="font-size: 18px; text-decoration: none; color: #3498db;">yug2711@stanford.edu</a>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>© 2024 Yug Shah | All Rights Reserved</p>
+</footer>
+
+
+</body>
+</html>
