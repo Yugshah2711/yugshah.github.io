@@ -85,6 +85,41 @@
             font-size: 2em;
         }
     </style>
+    <style>
+    /* Navigation Bar */
+    nav {
+        background-color: #1a1a1a;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        color: #1abc9c;
+    }
+
+    body {
+        margin-top: 60px; /* Adjusts the margin so content doesn't overlap with the fixed navbar */
+    }
+</style>
+
 </head>
 <body>
  <nav>
