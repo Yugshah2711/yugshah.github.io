@@ -12,7 +12,7 @@
         }
 
         .hero {
-            background: url('project-title-bg.jpg') no-repeat center center/cover;
+            background: url('WEDM.jpg') no-repeat center center/cover;
             height: 400px;
             display: flex;
             justify-content: center;
@@ -90,11 +90,46 @@
             background-color: #2980b9;
         }
     </style>
+    <style>
+    /* Navigation Bar */
+    nav {
+        background-color: #1a1a1a;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        color: #1abc9c;
+    }
+
+    body {
+        margin-top: 60px; /* Adjusts the margin so content doesn't overlap with the fixed navbar */
+    }
+</style>
+
 </head>
 <body>
  <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="index.html">Home</a></li>
            <li><a href="resume.html">Resume</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="#about">About</a></li>
