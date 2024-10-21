@@ -49,29 +49,31 @@
             position: relative;
             overflow: hidden;
             cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .project-item img {
             width: 100%;
-            height: 100%;
+            height: 200px;
             object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .project-item:hover img {
-            transform: scale(1.1);
+            border-radius: 10px 10px 0 0;
         }
 
         .project-overlay {
             position: absolute;
-            top: 0;
-            left: 0;
+            bottom: 0;
             width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -81,53 +83,44 @@
         }
 
         .project-overlay h2 {
-            color: white;
-            font-size: 2em;
+            font-size: 1.5em;
+            margin: 0;
         }
-    </style>
-    <style>
-    /* Navigation Bar */
-    nav {
-        background-color: #1a1a1a;
-        padding: 15px;
-        display: flex;
-        justify-content: space-around;
-        position: relative;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-    }
 
-    nav ul {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-    }
+        /* Navigation Bar */
+        nav {
+            background-color: #1a1a1a;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
 
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-    }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
 
-    nav ul li a:hover {
-        color: #1abc9c;
-    }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
 
-    body {
-        margin-top: 60px; /* Adjusts the margin so content doesn't overlap with the fixed navbar */
-    }
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
         body {
-    margin: 0;
-    padding: 0;
-}
+            margin-top: 60px; /* Adjusts margin for fixed navbar */
+        }
 
-nav {
-    margin: 0;
-    padding: 0;
-}
-  /* Footer */
+        /* Footer */
         footer {
             background-color: #2c3e50;
             color: white;
@@ -138,14 +131,13 @@ nav {
         footer p {
             margin: 0;
         }
-</style>
-
+    </style>
 </head>
 <body>
- <nav>
+    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-           <li><a href="resume.html">Resume</a></li>
+            <li><a href="resume.html">Resume</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -163,36 +155,34 @@ nav {
     </div>
 
     <!-- Project Grid -->
-   <div class="project-item">
-    <a href="project1.html">
-        <img src="WEDM.jpg" alt="Optimization of Near-Dry Wire Electrical Discharge Machining for Nitinol SMA">
-        <div class="project-overlay">
-            <h2>Optimization of Near-Dry Wire Electrical Discharge Machining for Nitinol SMA</h2>
+    <div class="project-grid">
+        <div class="project-item">
+            <a href="project1.html">
+                <img src="WEDM.jpg" alt="Optimization of Near-Dry Wire Electrical Discharge Machining for Nitinol SMA">
+                <div class="project-overlay">
+                    <h2>Optimization of Near-Dry Wire Electrical Discharge Machining for Nitinol SMA</h2>
+                </div>
+            </a>
         </div>
-    </a>
-</div>
-<div class="project-item">
-    <a href="project2.html">
-        <img src="project2.jpg" alt="Experimental Investigations and Effect of Nano-Powder-Mixed EDM Variables on Performance Measures of Nitinol SMA">
-        <div class="project-overlay">
-            <h2>Experimental Investigations and Effect of Nano-Powder-Mixed EDM Variables on Performance Measures of Nitinol SMA</h2>
+        <div class="project-item">
+            <a href="project2.html">
+                <img src="project2.jpg" alt="Experimental Investigations and Effect of Nano-Powder-Mixed EDM Variables on Performance Measures of Nitinol SMA">
+                <div class="project-overlay">
+                    <h2>Experimental Investigations and Effect of Nano-Powder-Mixed EDM Variables on Performance Measures of Nitinol SMA</h2>
+                </div>
+            </a>
         </div>
-    </a>
-</div>
-
         <!-- Add more project items as needed -->
     </div>
-<section style="text-align: center; margin-bottom: 20px;">
-    <a href="https://www.linkedin.com/in/yug-shah-680049250/" target="_blank" style="font-size: 18px; text-decoration: none; color: #3498db;">LinkedIn</a> | 
-    <a href="mailto:yug2711@stanford.edu" style="font-size: 18px; text-decoration: none; color: #3498db;">yug2711@stanford.edu</a>
-</section>
 
-<!-- Footer -->
-<!-- Footer -->
-<footer>
-    <p>© 2024 Yug Shah | Mechanical Engineering Portfolio</p>
-</footer>
+    <section style="text-align: center; margin-bottom: 20px;">
+        <a href="https://www.linkedin.com/in/yug-shah-680049250/" target="_blank" style="font-size: 18px; text-decoration: none; color: #3498db;">LinkedIn</a> | 
+        <a href="mailto:yug2711@stanford.edu" style="font-size: 18px; text-decoration: none; color: #3498db;">yug2711@stanford.edu</a>
+    </section>
 
-
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Yug Shah | Mechanical Engineering Portfolio</p>
+    </footer>
 </body>
 </html>
