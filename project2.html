@@ -44,35 +44,36 @@
             line-height: 1.6;
         }
 
-        .figure {
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        .figure img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        .figures-row {
+      .figures-row {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            gap: 20px;
             margin-top: 20px;
         }
 
-        .figures-row .figure {
-            flex: 1;
-            margin: 0 10px;
+        .figure {
             text-align: center;
+            margin: 0;
         }
 
-        .figures-row .figure img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
+        .figure img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        .figure h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .figure p {
+            font-size: 1em;
+            color: #555;
+        }
+
 
         .download-btn {
             display: block;
