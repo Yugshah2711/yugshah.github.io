@@ -54,37 +54,52 @@
         }
 
         .hero-slideshow {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-        }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+}
 
-        .hero-slideshow img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            opacity: 0;
-            animation: fade 15s infinite;
-        }
+.hero-slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fade 35s infinite;
+}
 
-        .hero-slideshow img:nth-child(1) {
-            animation-delay: 0s;
-        }
-        .hero-slideshow img:nth-child(2) {
-            animation-delay: 5s;
-        }
-        .hero-slideshow img:nth-child(3) {
-            animation-delay: 10s;
-        }
+.hero-slideshow img:nth-child(1) {
+    animation-delay: 0s;
+}
+.hero-slideshow img:nth-child(2) {
+    animation-delay: 5s;
+}
+.hero-slideshow img:nth-child(3) {
+    animation-delay: 10s;
+}
+.hero-slideshow img:nth-child(4) {
+    animation-delay: 15s;
+}
+.hero-slideshow img:nth-child(5) {
+    animation-delay: 20s;
+}
+.hero-slideshow img:nth-child(6) {
+    animation-delay: 25s;
+}
+.hero-slideshow img:nth-child(7) {
+    animation-delay: 30s;
+}
 
-        @keyframes fade {
-            0%, 100% { opacity: 0; }
-            25%, 75% { opacity: 1; }
-        }
+@keyframes fade {
+    0%, 100% { opacity: 0; }
+    25%, 75% { opacity: 1; }
+}
 
         .hero-content {
             position: relative;
