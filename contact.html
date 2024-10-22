@@ -12,30 +12,30 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        /* Ensure the hero and content fill the screen height */
+        /* Ensure the hero section doesn't overlap the nav */
         .hero {
             background: url('contact1.jpg.avif') no-repeat center center/cover;
-            height: 400 px;
+            height: 400px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             color: white;
             text-align: center;
+            margin-top: 60px; /* Push content below the nav bar */
         }
 
         .hero h1 {
-            font-size: 4em;
+            font-size: 3em; /* Adjusted to avoid text being too large */
             background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
         }
 
         .form-container {
             display: flex;
             justify-content: center;
-            margin: 20px;
-            flex-grow: 1;
+            padding: 30px;
         }
 
         form {
@@ -104,7 +104,6 @@
             color: #1abc9c;
         }
 
-        /* Make sure footer sticks at the bottom */
         .content-wrapper {
             display: flex;
             flex-direction: column;
@@ -137,7 +136,6 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
-             
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -162,10 +160,11 @@
         <div class="success-message">
             <p>Thank you for your message! I'll get back to you soon.</p>
         </div>
-  <section style="text-align: center; margin-bottom: 20px;">
-        <a href="https://www.linkedin.com/in/yug-shah-680049250/" target="_blank" style="font-size: 18px; text-decoration: none; color: #3498db;">LinkedIn</a> | 
-        <a href="mailto:yug2711@stanford.edu" style="font-size: 18px; text-decoration: none; color: #3498db;">yug2711@stanford.edu</a>
-    </section>
+
+        <section style="text-align: center; margin-bottom: 20px;">
+            <a href="https://www.linkedin.com/in/yug-shah-680049250/" target="_blank" style="font-size: 18px; text-decoration: none; color: #3498db;">LinkedIn</a> | 
+            <a href="mailto:yug2711@stanford.edu" style="font-size: 18px; text-decoration: none; color: #3498db;">yug2711@stanford.edu</a>
+        </section>
 
         <footer>
             <p>© 2024 Yug Shah | Mechanical Engineering Portfolio</p>
